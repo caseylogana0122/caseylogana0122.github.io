@@ -1,36 +1,36 @@
 body{
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 20px;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 2rem auto;
     background-color:#ffffff;
 
 }
 nav{
-    font-size: 30px;
-    grid-column: 2/4;
-    justify-self: end;
-    
-    
+    font-size: 40px;
+    font-style: italic;
+    grid-column: 1/5;
+    justify-self: start;   
 }
 
 header{
-    grid-column: 1/4;
+    grid-column: 1/6;
     padding-top: auto;
 }
 
 footer{
-    grid-column: 1/4;
+    grid-column: 1/5;
 }
 
 h1{
     color: #a64d79;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 70px;
-    
+    font-size: 70px;  
+
+    text-align: right;
     
 }
 
@@ -42,16 +42,26 @@ li{
     
 }
 
-
+main{
+    grid-column: 2/5;
+}
 
 .mainportrait{
-    grid-column: 1/4;
     border-style: solid;
     border-width: 2px;
-    border: color #600c35;
+    border-color: #600c35;
     align-items: left;
 
     
+}
+
+.contact{
+    grid-column: 5/5;
+    text-align: left;
+}
+
+figure{
+    grid-column: 1/2;
 }
 
 figcaption{
