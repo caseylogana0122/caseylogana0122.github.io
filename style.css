@@ -1,23 +1,26 @@
 body{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(20px, auto);
     grid-gap: 20px;
     max-width: 1600px;
+    max-height: 1250px;
     margin: 2rem auto;
     background-color:#ffffff;
 
 }
 nav{
+    column-span: all;
     font-size: 40px;
     font-style: italic;
     grid-column: 1/5;
-    justify-self: start;   
+    justify-self: left;  
+    height: 70px; 
 }
+
 
 header{
     grid-column: 1/6;
-    padding-top: auto;
 }
 
 footer{
@@ -25,10 +28,12 @@ footer{
 }
 
 h1{
+    column-span: all;
     color: #a64d79;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 70px;
+    height: 50px;
     text-align: right;
     
 }
@@ -41,17 +46,48 @@ li{
     
 }
 
-main{
-    grid-column: 2/5;
+.lowerborder{
+    column-span:all;
+    grid-column: 1/-1;
+    height: 20px;
+    width: 1600px;
+    opacity: .8;
+}
+
+img.midbordpic{
+    grid-column: 4;
+    grid-row: 4/7;
+    display: grid;
+    float:inline-start;
+    height: 900px;
+    width: 15px;
+    column-span: all;
+    opacity: .5;
+}
+
+p.bio{
+    column-span: all;
+    width: 800px;
+    float:inline-start;
+    font-size: 25px;
+}
+
+figure{
+    grid-column: 1/2;
 }
 
 .mainportrait{
     border-style: solid;
     border-width: 2px;
     border-color: #600c35;
-    align-items: left;
+    align-items: left;   
+}
 
-    
+
+figcaption{
+    color:#a64d79;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
 }
 
 .contact{
@@ -59,15 +95,6 @@ main{
     text-align: left;
 }
 
-figure{
-    grid-column: 1/2;
-}
-
-figcaption{
-    color:#a64d79;
-    font-family: 'Poppins', sans-serif;
-    font-size: small;
-}
 
 p{
     color:#a64d79;
@@ -80,5 +107,3 @@ a{
     color:#a64d79;
     text-decoration: underline;
 }
-
-
