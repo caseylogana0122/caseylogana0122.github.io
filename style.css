@@ -1,15 +1,19 @@
 body{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
-    grid-auto-rows: minmax(20px, auto);
-    grid-gap: 20px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 15px;
     max-width: 1600px;
-    max-height: 1250px;
-    margin: 2rem auto;
+    max-height: 1080px;
+    margin: auto;
     background-color:#ffffff;
 
 }
+
 nav{
+    float: left;
+    display: block;
+    text-align: left;
     column-span: all;
     font-size: 40px;
     font-style: italic;
@@ -18,9 +22,17 @@ nav{
     height: 70px; 
 }
 
+ul{
+    padding-left: 0;
+}
+
+li{
+    text-align: left;
+}
 
 header{
     grid-column: 1/6;
+    width: 1600px;
 }
 
 footer{
@@ -47,22 +59,29 @@ li{
 }
 
 .lowerborder{
+    padding-top: 10px;
     column-span:all;
     grid-column: 1/-1;
-    height: 20px;
+    height: 15px;
     width: 1600px;
     opacity: .8;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
 }
 
 img.midbordpic{
     grid-column: 4;
+    column-width:15px;
     grid-row: 4/7;
     display: grid;
     float:inline-start;
     height: 900px;
     width: 15px;
-    column-span: all;
     opacity: .5;
+    filter: blur(3px);
+    border-radius: 15px;
+    padding-top: 0%;
+    padding-right: 0;
 }
 
 p.bio{
@@ -70,10 +89,16 @@ p.bio{
     width: 800px;
     float:inline-start;
     font-size: 25px;
+    margin:0;
+    padding-top: 1;
 }
 
 figure{
     grid-column: 1/2;
+    padding-left: 0;
+    padding-top: 2;
+    margin: 0;
+
 }
 
 .mainportrait{
@@ -93,14 +118,28 @@ figcaption{
 .contact{
     grid-column: 5/5;
     text-align: left;
+    height: 150px;
+    width: 200px;
+    font-size: xx-large;
+    
 }
 
+p.coninfo{
+    font-size: 30px;
+    margin:0;
 
+}
 p{
     color:#a64d79;
     font-family: 'Montserrat' sans-serif;
     font-size: x-large;
     
+}
+p.iconinfo{
+    color:#a64d79;
+    font-family: 'Montserrat' sans-serif;
+    font-size: smaller;
+    text-indent: 60px;
 }
 
 a{
