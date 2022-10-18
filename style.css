@@ -13,6 +13,7 @@ body{
 nav{
     float: left;
     display: block;
+    margin-bottom: .3em;
     text-align: left;
     column-span: all;
     font-size: 40px;
@@ -33,7 +34,10 @@ li{
 header{
     grid-column: 1/6;
     width: 1600px;
+    height: 120px;
+    
 }
+
 
 footer{
     grid-column: 1/5;
@@ -59,9 +63,10 @@ li{
 }
 
 .lowerborder{
-    padding-top: 10px;
     column-span:all;
     grid-column: 1/-1;
+    padding-top: .3em;
+    padding-bottom: .3em;
     margin: auto;
     height: 15px;
     width: 1600px;
@@ -88,18 +93,18 @@ img.midbordpic{
 
 p.bio{
     column-span: all;
+    padding-left: .8em;
     width: 800px;
     float:inline-start;
     font-size: 25px;
-    margin:0;
-    padding-top: 1;
+    margin: 0.1em;
 }
 
 figure{
     grid-column: 1/2;
     padding-left: 0;
     padding-top: 2;
-    margin: 0;
+    margin: 0.1em;
 
 }
 
@@ -114,7 +119,7 @@ figure{
 figcaption{
     color:#a64d79;
     font-family: 'Poppins', sans-serif;
-    font-size: small;
+    font-size: 90%;
 }
 
 .contact{
