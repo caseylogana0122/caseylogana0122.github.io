@@ -10,16 +10,16 @@ body{
 
 }
 
-nav{
+nav.main-nav{
+    grid-area: nav;
     float: left;
     display: block;
     margin-bottom: .3em;
     text-align: left;
     column-span: all;
-    font-size: 40px;
-    font-style: italic;
-    grid-column: 1/5;
-    justify-self: left;  
+    font-size: 32px;
+    grid-column: 1/6;
+    justify-self: right;  
     height: 70px; 
 }
 
@@ -27,9 +27,6 @@ ul{
     padding-left: 0;
 }
 
-li{
-    text-align: left;
-}
 
 header{
     grid-column: 1/6;
@@ -59,7 +56,6 @@ li{
     display: inline;
     border-width: 2px;
     border-color: #E1E1B0;
-    
 }
 
 .lowerborder{
@@ -71,8 +67,7 @@ li{
     height: 15px;
     width: 1600px;
     opacity: .8;
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
+    filter: drop-shadow(0 0 0.1rem rgb(159, 164, 236));
 }
 
 img.midbordpic{
@@ -85,8 +80,7 @@ img.midbordpic{
     height: 900px;
     width: 15px;
     opacity: .5;
-    filter: blur(3px);
-    border-radius: 15px;
+    filter: drop-shadow(0 0 0.1rem rgb(159, 164, 236));
     padding-top: 0%;
     padding-right: 0;
 }
@@ -96,7 +90,7 @@ p.bio{
     padding-left: .8em;
     width: 800px;
     float:inline-start;
-    font-size: 25px;
+    font-size: 28px;
     margin: 0.1em;
 }
 
@@ -116,7 +110,7 @@ figure{
 
 
 figcaption{
-    color:#a64d79;
+    color:#000000;
     font-family: 'Poppins', sans-serif;
     font-size: 90%;
 }
@@ -126,17 +120,22 @@ figcaption{
     text-align: left;
     height: 150px;
     width: 200px;
-    font-size: xx-large;
+    font-size: 30px;
     
 }
 
 p.coninfo{
-    font-size: 30px;
+    font-size: 25px;
     margin:0;
 }
 
+div.contactlinks{
+    font-size: 25px;
+    color:#000000;
+}
+
 p{
-    color:#a64d79;
+    color:#000000;
     font-family: 'Montserrat' sans-serif;
     font-size: x-large;
     
@@ -153,6 +152,15 @@ p.iconinfo{
 }
 
 a{
-    color:#a64d79;
-    text-decoration: underline;
+    color:#000000;
+}
+
+a.navindex{
+    color:#600c35;
+}
+a.navcv{
+    color:#600c35;
+}
+a.navgallery{
+    color:#600c35;
 }
