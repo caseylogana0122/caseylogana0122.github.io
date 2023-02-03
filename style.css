@@ -1,6 +1,9 @@
 body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    max-width: 1500px;
+    margin: 0, auto;
+    padding: 20px;
 }
 
 .main-head{
