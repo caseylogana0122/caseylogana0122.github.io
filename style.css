@@ -16,8 +16,10 @@ body {
 }
 
 .main-nav{
-    grid-column: 3;
+    column-span: all;
+    grid-column: 1/4;
     text-align: right;
+    border-bottom: 10px solid rgb(177, 105, 159);
 }
 
 li{
@@ -28,15 +30,22 @@ li{
 }
 
 p.bio{
-    column-span: 2;
-    font-size: 23px;
+    font-size: 22px;
+    margin-top: 10px;
+    padding-right: 4%;
+    padding-bottom: 4%;
 }
 
 .contact{
     grid-column: 3;
+    padding-left: 4%;
     text-align: left;
-    font-size: 28px;
-    
+    font-size: 23px;
+    border-left: 10px solid rgb(177, 105, 159);
+}
+
+p.coninfo{
+    margin-top: 4%;
 }
 
 .mainportrait{
